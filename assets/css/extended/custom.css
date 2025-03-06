@@ -1,0 +1,11 @@
+/* Disable rounding from PaperMod */
+.profile img {
+  border-radius: 5%;
+}
+
+/* Custom styling to achieve prefix on the title */
+.pre-title {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.6;
+}

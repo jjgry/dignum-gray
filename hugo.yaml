@@ -1,0 +1,58 @@
+baseURL: "https://dignumgray.co.uk"
+languageCode: "en-gb"
+title: "dignumgray.co.uk"
+theme: "PaperMod"
+params:
+  profileMode:
+    enabled: true
+    title: |
+      <span class='pre-title'>Please join us to celebrate the marriage of</span><br>
+      John-Joseph Gray and Isobel Dignum
+    subtitle: "Saturday 23<sup>rd</sup> August 2025"
+    imageUrl: "./jj-and-izzy.jpg"
+    imageTitle: "Portrait of JJ and Izzy"
+    imageWidth: 400
+    imageHeight: 400
+  assets:
+    disableScrollBarStyle: true
+  disableScrollToTop: true
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    includeMatches: true
+    keys: ["title", "permalink", "summary", "content"]
+  footer:
+    text: "[GitHub](https://github.com/jjgry/dignum-gray)"
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: 10
+    - name: On the Day
+      url: /on-the-day
+      weight: 20
+    - name: Travel
+      url: /travel
+      weight: 30
+    - name: Gifts
+      url: /gifts
+      weight: 40
+    - name: RSVP
+      url: /rsvp
+      weight: 50
+    - name: 🔎
+      url: /search
+      weight: 60
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
